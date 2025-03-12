@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Plant Monitoring</title>
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Agriculture</a>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p>Loading, please wait...</p>
+        </div>
+    </div>
+    
+    <div id="home-content" class="hidden">
+        <main>
+            <section class="container">
+                <!-- Left Content -->
+                <div class="text-content">
+                    <h1>Smart Plant Monitoring</h1>
+                    <h2>Grow healthier plants with real-time insights.</h2>
+                    <p>Track plant health with real-time analytics, optimize watering schedules, and enhance growth with smart AI-based monitoring.</p>
+                    <a href="dashboard.html" class="button">Go to Dashboard</a>
+                </div>
+    
+                <!-- Right Image -->
+                <div class="image-container">
+                    <picture>
+                        <source srcset="../images/plant-small.webp" media="(max-width: 640px)">
+                        <source srcset="../images/plant-medium.webp" media="(max-width: 1024px)">
+                        <img src="../images/plant-large.webp" alt="Plant" loading="lazy">
+                    </picture>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Smart Agriculture. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/email.png" alt="Email"></a>
+                <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script/home.js"></script>
+    <script src="/script/navbar.js"></script>
+</body>
+</html>
