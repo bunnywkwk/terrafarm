@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Monitoring</title>
+    <link rel="stylesheet" href="/styles/plantTab.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="plant-container">
+        <!-- Sensor Data -->
+        <div class="sensor-data">
+            <div class="data-box">
+                <h3>Temperature</h3>
+                <p id="temperature">-- °C</p>
+            </div>
+            <div class="data-box">
+                <h3>Soil Moisture</h3>
+                <p id="soil-moisture">-- %</p>
+            </div>
+            <div class="data-box">
+                <h3>Humidity</h3>
+                <p id="humidity">-- %</p>
+            </div>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="carousel">
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+            <div class="image-container">
+                <img src="../images/img1.jpg" alt="Plant Image 1" class="carousel-img active">
+                <img src="../images/img2.jpg" alt="Plant Image 2" class="carousel-img">
+                <img src="../images/img3.jpg" alt="Plant Image 3" class="carousel-img">
+            </div>     
+            <button class="next" onclick="nextImage()">&#10095;</button>
+        </div>
+
+        <!-- Plant Status -->
+        <div class="plant-status">
+            <h3>Plant Status</h3>
+            <p id="status-text">Analyzing data...</p>
+        </div>
+    </div>
+
+    <script src="/script/plantTab.js"></script>
+</body>
+</html>

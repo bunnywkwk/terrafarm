@@ -36,6 +36,7 @@
 
 .nav-links li {
     position: relative;
+    padding-left: 20px;
 }
 
 .nav-links li a {
