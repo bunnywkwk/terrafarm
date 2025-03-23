@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First Dashboard</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+<body>
+    <div class="header">Agricultural Assistant</div>
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+    <div class="sidebar" id="sidebar">
+        <h2>Dashboard</h2>
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="plantTab.html">Plants</a>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div>
+                <h1>Temperature</h1>
+                <h2 class="value" id="temperature">-- °C</h2>
+            </div>
+            <div class="icon">🌡️</div>
+        </div>
+        <div class="card">
+            <div>
+                <h1>Soil Moisture</h1>
+                <h2 class="value" id="soil">-- °C</h2>
+            </div>
+            <div class="icon">💧</div>
+        </div>
+        <div class="card">
+            <div>
+                <h1>Humidity</h1>
+                <h2 class="value" id="humidity">-- °C</h2>
+            </div>
+            <div class="icon">🌧️</div>
+        </div>
+    </div>
+    <script src="/script/dashboard.js"></script>
+</body>
+</html>
